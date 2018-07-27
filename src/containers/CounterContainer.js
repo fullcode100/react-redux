@@ -7,3 +7,8 @@ const mapStateToProps = (state) => {
   }
 };
 
+const componentConnector = connect(mapStateToProps);
+const connectedCounter = componentConnector(Counter);
+
+export default connectedCounter;
+
