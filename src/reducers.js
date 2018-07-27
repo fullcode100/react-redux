@@ -12,7 +12,7 @@ const initialState = { count: 0 };
 
 // Step 3: Write a reducer that accepts
 // the current state and an action
-const counter = (state=initialState, action) => {
+export const counter = (state=initialState, action) => {
   if (!action) {
     return state;
   }
@@ -20,11 +20,18 @@ const counter = (state=initialState, action) => {
   switch(action.type) {
     case INCREMENT:
       // add 1 to the count
+      return {
+        count: state.count + 1
+      }
       break;
     case DECREMENT:
       // subtract 1 from the count
+      return {
+        count: state.count - 1
+      }
       break;
     default:
       return state;
   }
 }
+
