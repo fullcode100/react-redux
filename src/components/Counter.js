@@ -1,3 +1,4 @@
+import React from 'react';
 // Counter is dumb.
 // It just renders props!
 

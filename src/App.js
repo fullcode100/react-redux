@@ -4,6 +4,8 @@ import { counter } from './reducers';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
+import Counter from './containers/CounterContainer';
+
 const store = createStore(counter);
 
 class App extends Component {
@@ -11,7 +13,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-
+          <Counter />
         </div>
       </Provider>
     );
