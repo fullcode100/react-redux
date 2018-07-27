@@ -8,7 +8,7 @@ import {
 //   count: 0
 // }
 
-const initialState = { count: 0 };
+const initialState = { count: 42 };
 
 // Step 3: Write a reducer that accepts
 // the current state and an action
