@@ -23,7 +23,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const componentConnector = connect(mapStateToProps);
+const componentConnector = connect(mapStateToProps, mapDispatchToProps);
 const connectedCounter = componentConnector(Counter);
 
 export default connectedCounter;
