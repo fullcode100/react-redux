@@ -11,9 +11,20 @@ const DECREMENT = 'DECREMENT';
 
 /*
   {
-    type: 'INCREMENT'
+    type: INCREMENT
   }
   {
-    type: 'DECREMENT'
+    type: DECREMENT
   }
 */
+// These are action creators, which cut down on typos.
+// Uses implicit return.
+// Note the parens around the returned object!
+const actionIncrement = () => ({
+  type: INCREMENT
+});
+
+const actionDecrement = () => ({
+  type: DECREMENT
+});
+
